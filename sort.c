@@ -129,7 +129,7 @@ void QuickSort(long int vet[], long int beg, long int end){
 
 void AvgTime(int type, long int n){
     long int i;
-    long int *vet = calloc(1, n*sizeof(long int));
+    long int *vet = calloc(n, sizeof(long int));
     for(i=0;i<n;i++){
         vet[i] = rand() % 1000000 +1;
     }
